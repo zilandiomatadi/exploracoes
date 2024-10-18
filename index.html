@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Explorações Geográficas</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    margin: 0;
+}
+
+.container {
+    perspective: 1000px;
+}
+
+.earth {
+    width: 650px;
+    height: 650px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2stU4fSOBgrfaNPQIM4hV_RD0545D3MucDsNN0NyMiNuKax354-DxiK2Wd_KKG2nF9gM&usqp=CAU');
+    background-size: cover;
+    border-radius: 50%;
+    animation: spin 10s linear infinite;
+    margin:auto;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="earth" id="earth"></div>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="EGA.html">Explorações na África</a></li>
+                <li><a href="EGAN.html">Explorações em Angola</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
